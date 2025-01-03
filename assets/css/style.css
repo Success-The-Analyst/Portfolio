@@ -823,19 +823,7 @@ h3 {
   transition: var(--transition-1);
 }
 
-.project-card .card-banner:is(:hover, :focus-within)::before {
-  opacity: 0.9;
-}
 
-.project-card .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  min-width: max-content;
-  opacity: 0;
-  transition: var(--transition-2);
-}
 
 .project-card .card-banner:is(:hover, :focus-within) .btn {
   transform: translate(-50%, -50%);
@@ -898,8 +886,9 @@ h3 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 20px;
   padding: 20px;
+  margin-inline : 2rem;
 }
 
 .project-card {
@@ -910,9 +899,23 @@ h3 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
+/* .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+.project-card .card-banner:is(:hover, :focus-within)::before {
+  opacity: 0.9;
+}
+
+.project-card .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  min-width: max-content;
+  opacity: 0;
+  transition: var(--transition-2);
 }
 
 .card-banner {
