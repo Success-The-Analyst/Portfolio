@@ -1676,3 +1676,14 @@ textarea.input-field {
     grid-template-columns: 1fr 0.85fr;
   }
 }
+
+
+.title.h3 {
+  font-size: 2rem; 
+  font-weight: bold; 
+}
+
+
+.card-subtitle {
+  font-size: 1.25rem; 
+}
