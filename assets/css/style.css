@@ -1679,11 +1679,12 @@ textarea.input-field {
 
 
 .title.h3 {
-  font-size: 2rem; 
-  font-weight: bold; 
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+  letter-spacing: 0.08em !important; 
 }
 
-
 .card-subtitle {
-  font-size: 1.25rem; 
+  font-size: 1.5rem !important;
+  letter-spacing: 0.08em !important; 
 }
